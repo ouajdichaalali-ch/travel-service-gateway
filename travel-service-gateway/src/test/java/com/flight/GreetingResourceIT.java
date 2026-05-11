@@ -1,4 +1,4 @@
-package com.travel;
+package com.flight;
 
 import io.quarkus.test.junit.QuarkusIntegrationTest;
 

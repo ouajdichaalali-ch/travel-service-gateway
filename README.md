@@ -1,33 +1,20 @@
-# Travel Service Gateway
+# Flight Service API
 
-Cloud-native travel booking gateway built with Quarkus.
+Mock flight backend service built with Quarkus.
 
 ## Features
 
 - Flight search
-- Hotel search
-- Booking management
-- JWT security
-- API Gateway integration
-- Kubernetes deployment
-- CI/CD pipeline
+- JSON REST APIs
+- OpenAPI documentation
+- Mock backend for Apigee demos
 
 ## Tech Stack
 
 - Quarkus
 - Java 21
 - Maven
-- Podman
-- Kubernetes
-- Apigee
-- GCP
 
-## Architecture
+## Endpoints
 
-[architecture diagram]
-
-## Running locally
-
-## Deployment
-
-## Roadmap
+GET /api/flights/search

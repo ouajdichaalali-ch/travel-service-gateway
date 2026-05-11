@@ -1,4 +1,4 @@
-package com.travel.dto;
+package com.flight.dto;
 
 public class ApiResponse<T> {
 

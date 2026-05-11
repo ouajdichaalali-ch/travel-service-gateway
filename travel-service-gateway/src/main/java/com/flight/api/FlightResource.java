@@ -1,8 +1,8 @@
-package com.travel.api;
+package com.flight.api;
 
-import com.travel.dto.ApiResponse;
-import com.travel.dto.FlightDto;
-import com.travel.service.FlightService;
+import com.flight.dto.ApiResponse;
+import com.flight.dto.FlightDto;
+import com.flight.service.FlightService;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -11,7 +11,7 @@ import jakarta.ws.rs.QueryParam;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.Valid;
-
+import com.flight.entity.FlightEntity;
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -25,7 +25,7 @@ public class FlightResource {
 
     @GET
     @Path("/search")
-    public ApiResponse<List<FlightDto>> searchFlights(
+    public ApiResponse<List<FlightEntity>> searchFlights(
             @QueryParam("origin")
             @NotBlank(message = "Origin is required")
             String origin,

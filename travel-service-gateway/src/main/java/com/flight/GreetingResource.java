@@ -1,4 +1,4 @@
-package com.travel;
+package com.flight;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
