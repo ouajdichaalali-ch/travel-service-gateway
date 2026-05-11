@@ -13,8 +13,16 @@ public class FlightService {
     @Inject
     FlightRepository flightRepository;
 
+    public List<FlightEntity> getAllFlights() {
+        return flightRepository.listAll();
+    }
+
     public List<FlightEntity> searchFlights(String origin, String destination) {
 
-        return flightRepository.findByRoute(origin, destination);
+        return flightRepository.find(
+                "origin = ?1 and destination = ?2",
+                origin,
+                destination
+        ).list();
     }
 }
