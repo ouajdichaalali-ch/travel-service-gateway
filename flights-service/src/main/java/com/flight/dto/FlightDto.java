@@ -13,6 +13,7 @@ public class FlightDto {
     private LocalDateTime arrivalTime;
     private BigDecimal price;
 
+
     public String getFlightId() {
         return flightId;
     }
@@ -68,4 +69,5 @@ public class FlightDto {
     public void setPrice(BigDecimal price) {
         this.price = price;
     }
+
 }
